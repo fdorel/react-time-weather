@@ -7,7 +7,7 @@ import BottomSection from "./components/bottom/index";
 import axios from "axios";
 
 
-const WEATHER_KEY = "ac23ac9eba8a9f1205c6b0663c20af47";
+const WEATHER_KEY = "";
 
 class App extends Component {
   constructor(props) {
@@ -21,8 +21,7 @@ class App extends Component {
 
   updateWeather() {
     const { cityName, numForcastDays } = this.state;
-    const URL = `http://api.weatherstack.com/current
-    ? access_key =${WEATHER_KEY}  &query=${cityName} &days=${numForcastDays}`;
+    const URL = `http://api.weatherstack.com/current?access_key=${WEATHER_KEY}&q=${cityName}&days=${numForcastDays}`;
     axios
       .get(URL)
       .then(res => {
