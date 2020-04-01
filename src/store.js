@@ -10,7 +10,7 @@ export default class Store extends React.Component {
 
     //Main App State
     this.state = {
-      appName: "Cities Weather"
+      appName: "Cities Weather Forecast"
     };
   }
 
