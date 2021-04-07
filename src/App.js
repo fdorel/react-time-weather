@@ -7,8 +7,7 @@ import Weather from './components/Weather'
 require("dotenv").config();
 
 const key = process.env.WEATHER_KEY;
-console.log('API Key: ', key);
-// console.log(process.env);
+//console.log('API Key: ', key);
 class App extends Component {
     state = {
         temperature: null,
