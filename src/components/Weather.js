@@ -2,7 +2,7 @@ import React from 'react'
 
 const Weather = props => (
   <div className='weather__info'>
-    {props.city && props.country && (
+    {props.city &&  (
       <p className='weather__key'>
         Location:{' '}
         <span>
