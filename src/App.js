@@ -25,7 +25,7 @@ class App extends Component {
         console.log(event.target.elements)
         const { city, country } = event.target.elements
 
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&appid=${key}&units=metric`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&appid=${key}&units=metric`
 
         const api_call = await fetch(url)
 
