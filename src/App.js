@@ -10,7 +10,7 @@ const key = process.env.WEATHER_KEY;
 /*console.log('API Key: ', key);*/
 class App extends Component {
     state = {
-        temperature: undefined,
+        temperature: null,
         city: null,
         country: null,
         humidity: null,
